@@ -1,165 +1,38 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/8NpkA7e4)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=22963983&assignment_repo_type=AssignmentRepo)
-# Assignment 1: Responsive Portfolio Website
+Name: Kupalwa Chibuye
+Student ID: 2021424278
 
-**Course:** CSC4035 Web Programming and Technologies
-**Weight:** 5% of final grade
-**Due:** Week 6, Friday 11:59 PM
 
----
+Design Theme:
+The portfolio uses a modern dark theme with professional blue accents. The design focuses on simplicity, readability, and responsiveness across different devices. The layout highlights important sections such as the hero introduction, about section, projects, and contact form while maintaining a clean and minimal user interface.
 
-## Overview
+CSS Techniques Used
 
-Create a professional, responsive portfolio website showcasing your skills, projects, and contact information. This assignment assesses your HTML5 and CSS3 skills, including semantic markup, modern layout techniques (Flexbox/Grid), and responsive design principles.
+CSS Custom Properties (Variables)
+Flexbox
+CSS Grid
+Media Queries
 
-**Important:** No CSS frameworks (Bootstrap, Tailwind, etc.) are allowed. All CSS must be hand-written.
+Other Techniques Used:
 
----
+Mobile-first responsive design
 
-## Requirements
+CSS transitions and hover animations
 
-### Functional Requirements
+Responsive images using object-fit
 
-Your portfolio must include **4 or more sections**:
+Sticky navigation bar
 
-| Section | Required Content |
-|---------|------------------|
-| **Home/Hero** | Your name, tagline, and call-to-action button |
-| **About** | Professional bio (150+ words), profile image, skills list |
-| **Projects** | Minimum 3 project cards with title, description, image, and links |
-| **Contact** | Contact form with validation attributes (name, email, message) |
+Challenges & Solutions
 
-### Technical Requirements
+One challenge I faced during the development of the portfolio was aligning the project card buttons so that they appeared at the bottom of each card regardless of the amount of text in the description. Initially, the buttons appeared at different heights because some project descriptions were longer than others. I solved this problem by using Flexbox in the project card layout and applying margin-top: auto to the links container so that the buttons would always stay at the bottom of the card.
 
-| Requirement | Description |
-|-------------|-------------|
-| **HTML5** | Valid semantic HTML (header, nav, main, section, article, footer) |
-| **CSS3** | External stylesheet only (no inline styles) |
-| **CSS Variables** | Use custom properties for colors and spacing |
-| **Flexbox** | Use for at least one layout component |
-| **CSS Grid** | Use for at least one layout component |
-| **Responsive** | Mobile-first with minimum 3 breakpoints |
-| **Accessibility** | Alt text, form labels, color contrast, heading hierarchy |
+Another challenge was ensuring that the profile image in the About section was responsive and aligned correctly with the text. At first, the image size caused layout issues on smaller screens. I resolved this by removing fixed widths and using responsive styling such as width: 100%, height: auto, and Flexbox to allow the layout to adapt properly across mobile, tablet, and desktop screen sizes.
 
-### Breakpoints Required
+Credits
 
-```css
-/* Mobile-first base styles */
+Images: Personal images and placeholder images used for demonstration purposes
 
-/* Tablet (768px and up) */
-@media (min-width: 768px) { }
+Fonts: System fonts (Segoe UI, Tahoma, sans-serif)
 
-/* Desktop (1024px and up) */
-@media (min-width: 1024px) { }
+Development Tools: Visual Studio Code and Google Chrome Developer Tools for testing responsive layouts
 
-/* Large Desktop (1200px and up) - optional */
-@media (min-width: 1200px) { }
-```
-
----
-
-## Project Structure
-
-```
-csc4035-assignment1-portfolio/
-├── index.html          # Main HTML file
-├── css/
-│   └── styles.css      # Main stylesheet
-├── images/             # Your images (profile, projects, etc.)
-├── screenshots/        # Screenshots at different breakpoints
-│   ├── mobile.png
-│   ├── tablet.png
-│   └── desktop.png
-└── README.md           # This file (update with your info)
-```
-
----
-
-## Getting Started
-
-1. **Clone this repository** to your local machine
-2. **Open `index.html`** in your code editor
-3. **Complete the TODO comments** in each file
-4. **Test responsiveness** using browser developer tools
-5. **Take screenshots** at mobile, tablet, and desktop sizes
-6. **Commit and push** your changes regularly
-
----
-
-## Grading Rubric (100 points)
-
-| Criterion | Points | Description |
-|-----------|--------|-------------|
-| **HTML Structure & Semantics** | 20 | Valid HTML5, semantic elements, proper document structure |
-| **CSS Styling & Design** | 20 | Professional design, cohesive color scheme, typography |
-| **Flexbox & Grid Usage** | 20 | Both techniques used appropriately and effectively |
-| **Responsive Design** | 20 | Mobile-first, 3+ breakpoints, no horizontal scrolling |
-| **Content & Completeness** | 10 | All sections complete with quality content |
-| **Code Quality** | 10 | Clean, organized, well-commented code |
-
-### Automated Tests (40% of grade)
-
-The following are checked automatically on each push:
-- HTML validation (no errors)
-- Required HTML elements present
-- CSS file linked correctly
-- Required sections exist
-- Responsive meta tag present
-
----
-
-## Submission Checklist
-
-Before submitting, verify:
-
-- [ ] All 4 sections are complete (Home, About, Projects, Contact)
-- [ ] HTML validates with no errors
-- [ ] CSS uses custom properties (variables)
-- [ ] Flexbox is used for at least one component
-- [ ] CSS Grid is used for at least one component
-- [ ] Site is responsive at all breakpoints
-- [ ] All images have alt text
-- [ ] Form inputs have labels
-- [ ] Screenshots added to `/screenshots` folder
-- [ ] README updated with your information
-
----
-
-## Your Information
-
-**Name:** [Your Name]
-**Student ID:** [Your Student ID]
-**Design Theme:** [Describe your portfolio theme/style]
-
-### CSS Techniques Used
-- [ ] CSS Custom Properties
-- [ ] Flexbox
-- [ ] CSS Grid
-- [ ] Media Queries
-- [ ] Other: _______________
-
-### Challenges & Solutions
-[Describe any challenges you faced and how you solved them]
-
-### Credits
-[List any images, fonts, or resources used with attribution]
-
----
-
-## Academic Integrity
-
-- All code must be your own work
-- No CSS frameworks or libraries allowed
-- Images must be royalty-free or your own (credit sources)
-- Plagiarism detection tools will be used
-
-**Violations result in zero marks and academic misconduct reporting.**
-
----
-
-## Extension Opportunities (Bonus: up to +10%)
-
-- Dark/light mode toggle with CSS (+3%)
-- CSS animations/transitions (+3%)
-- CSS-only hamburger menu (+2%)
-- Print stylesheet (+2%)

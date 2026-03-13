@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio website for [Your Name]">
-    <title>Portfolio - [Your Name]</title>
+    <meta name="description" content="Professional portfolio website for Kupalwa Chibuye">
+    <title>Kupalwa Chibuye - Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
 
     <!-- Navigation -->
     <header class="header">
-        <nav class="nav">
+        <nav class="nav" aria-label="Main Navigation">
             <!-- TODO: Create navigation with links to each section
                  Requirements:
                  - Logo/site title
@@ -32,11 +32,11 @@
                  - Mobile-friendly (hamburger menu optional)
                  - Active state indication
             -->
-            <div class="nav__logo">
-                <a href="#home">[Your Name]</a>
+            <div class="nav-logo">
+                <a href="#home">Kupalwa Chibuye</a>
             </div>
-            <ul class="nav__menu">
-                <li><a href="#home">Home</a></li>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -44,7 +44,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main-content">
         <!-- Hero Section -->
         <section id="home" class="hero">
             <!-- TODO: Create hero section
@@ -54,11 +54,11 @@
                  - Call-to-action button
                  - Consider using Flexbox for layout
             -->
-            <div class="hero__content">
-                <h1>Your Name</h1>
-                <p class="hero__tagline">
+            <div class="hero-content">
+                <h1>Kupalwa Chibuye</h1>
+                <p class="hero-tagline">
                     <!-- TODO: Add your professional tagline -->
-                    Web Developer | Designer | Problem Solver
+                    Web Developer | Designer | Problem Solver | System Administrator | Network Engineer |
                 </p>
                 <a href="#contact" class="btn btn--primary">Get In Touch</a>
             </div>
@@ -76,33 +76,27 @@
             -->
             <div class="container">
                 <h2>About Me</h2>
-                <div class="about__content">
-                    <div class="about__image">
+                <div class="about-content">
+                    <div class="about-image">
                         <!-- TODO: Add your profile image -->
-                        <img src="images/profile-placeholder.jpg" alt="Profile photo of [Your Name]">
+                        <img src="images/Me.jpg" alt="Profile photo of Kupalwa Chibuye">
                     </div>
-                    <div class="about__text">
+                    <div class="about-text">
                         <p>
-                            <!-- TODO: Write your professional bio (150+ words)
-                                 Include:
-                                 - Your background
-                                 - Your interests in web development
-                                 - Your goals
-                                 - What makes you unique
-                            -->
-                            [Your professional bio goes here. Write at least 150 words about yourself,
-                            your background, your passion for web development, and your goals.
-                            This is your opportunity to introduce yourself to potential employers or clients.]
+                          My name is Kupalwa Chibuye, and I am a passionate Information Technology student with a strong interest in software development and modern web technologies. I enjoy learning how websites and systems are designed, built, and optimized to solve real-world problems. During my studies, I have gained experience working with programming languages such as Java, HTML, and CSS, as well as database technologies like MySQL. I have also explored networking concepts and system design, which help me understand how different technologies work together to create efficient digital solutions.
+                          I am particularly interested in web development because it allows me to combine creativity with technical problem-solving. I enjoy designing responsive and user-friendly interfaces that provide a smooth experience across different devices. My goal is to continue improving my skills in front-end and back-end development while working on projects that challenge me to think critically and creatively.
+                          What makes me unique is my curiosity and dedication to learning new technologies. I enjoy experimenting with new tools, building practical projects, and continuously improving my skills to become a well-rounded software developer in the future.  
                         </p>
                         <h3>Skills</h3>
-                        <ul class="skills-list">
-                            <!-- TODO: Add your skills -->
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>Responsive Design</li>
-                            <!-- Add more skills -->
-                        </ul>
+                        <div class="skills-grid">
+                            <div class="skill-card">Web Programming (HTML & CSS)</div>
+                            <div class="skill-card">Java Programming</div>
+                            <div class="skill-card">MySQL Databases</div>
+                            <div class="skill-card">Networking</div>
+                            <div class="skill-card">System Troubleshooting</div>
+                            <div class="skill-card">Problem Solving</div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,19 +113,20 @@
             -->
             <div class="container">
                 <h2>My Projects</h2>
-                <div class="projects__grid">
+                <div class="projects-grid">
                     <!-- Project Card 1 -->
                     <article class="project-card">
                         <!-- TODO: Replace with your project -->
-                        <img src="images/project1-placeholder.jpg" alt="Screenshot of Project 1">
+                        <img src="images/project 1.jpg" alt="Project 1">
                         <div class="project-card__content">
-                            <h3>Project Title 1</h3>
+                            <h3>Library Management System</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                               The Library Management System is a software application designed to help manage and organize library operations efficiently. The system allows librarians to store and manage information about books, users, and borrowing transactions in a structured database. It simplifies tasks such as adding new books, registering users, and keeping track of borrowed and returned books.
+                               This project was developed using Java for the application logic and MySQL for the database management system. The command line interface was used to interact with the system, allowing users to perform various operations through simple commands.
+                               The main problem this system solves is the difficulty of managing library records manually. By automating the process, the system reduces errors, improves record keeping, and makes it easier for librarians to track books and user transactions.
                             </p>
                             <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
+                                <a href="#" class="btn btn--small">View Details</Details></a>
                                 <a href="#" class="btn btn--small btn--outline">GitHub</a>
                             </div>
                         </div>
@@ -140,16 +135,17 @@
                     <!-- Project Card 2 -->
                     <article class="project-card">
                         <!-- TODO: Replace with your project -->
-                        <img src="images/project2-placeholder.jpg" alt="Screenshot of Project 2">
+                        <img src="images/project2.jpg" alt="Project 2">
                         <div class="project-card__content">
-                            <h3>Project Title 2</h3>
+                            <h3>Networking Lad Setup</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                The Networking Lab Setup project involved configuring and testing a small virtual network environment to understand how computer networks operate. The main objective of the project was to simulate a real networking environment where multiple machines can communicate with each other through a properly configured network. This helped in understanding key networking concepts such as IP addressing, connectivity, and network configuration.
+                                The technologies used in this project included virtualization tools such as VirtualBox and Vagrant to create and manage virtual machines. Basic networking commands and configurations were used to establish communication between the machines, allowing them to exchange data within the network environment.
+                                The problem this project helps solve is the difficulty of practicing networking concepts without access to physical networking equipment. By using virtualization, the setup allows students to safely simulate and test networking configurations in a controlled environment, helping them develop practical networking skills and troubleshoot connectivity issues.
                             </p>
                             <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
-                                <a href="#" class="btn btn--small btn--outline">GitHub</a>
+                                <a href="#" class="btn btn--small">View Details</a>
+                                <a href="#" class="btn btn--small btn--outline">Facebook</a>
                             </div>
                         </div>
                     </article>
@@ -157,16 +153,17 @@
                     <!-- Project Card 3 -->
                     <article class="project-card">
                         <!-- TODO: Replace with your project -->
-                        <img src="images/project3-placeholder.jpg" alt="Screenshot of Project 3">
+                        <img src="images/project3.jpg" alt="Project 3">
                         <div class="project-card__content">
-                            <h3>Project Title 3</h3>
+                            <h3>Web Development</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                               The Web Development project involved designing and building a responsive website using modern web technologies. The goal of the project was to create a clean, user-friendly website that can adapt to different screen sizes such as mobile phones, tablets, and desktop computers. The project focused on applying proper HTML structure, styling, and layout techniques to create a visually appealing and functional web page.
+                               The technologies used in this project include HTML5 for the structure of the website and CSS3 for styling and layout design. Modern CSS techniques such as Flexbox and Grid were used to organize content and create responsive layouts. Media queries were also applied to ensure the website adjusts correctly on different devices.
+                               The problem this project helps solve is the challenge of creating websites that work well across different screen sizes and devices. By implementing responsive design principles, the project ensures that users have a consistent and accessible browsing experience regardless of the device they are using. 
                             </p>
                             <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
-                                <a href="#" class="btn btn--small btn--outline">GitHub</a>
+                                <a href="#" class="btn btn--small">View Details</a>
+                                <a href="#" class="btn btn--small btn--outline">Facebook</a>
                             </div>
                         </div>
                     </article>
@@ -191,7 +188,12 @@
             -->
             <div class="container">
                 <h2>Contact Me</h2>
-                <form class="contact__form" action="#" method="POST">
+                <p>Feel free to reach out for any inquiries or any friendly chat.</p>
+                <ul class="contact-list">
+                    <li>Email: kupalwa.chibuye@cs.unza.zm</li>
+                    <li>Location: Lusaka, Zambia</li>
+                </ul>
+                <form class="contact-form" action="#" method="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input
@@ -248,14 +250,15 @@
              - Back to top link (optional)
         -->
         <div class="container">
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
-            <nav class="footer__social">
+            <p>&copy; 2026 Kupalwa Chibuye. All rights reserved.</p>
+            <nav class="footer-social">
                 <!-- TODO: Add your social media links -->
                 <a href="#" aria-label="GitHub">GitHub</a>
                 <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="Twitter">Twitter</a>
+                <a href="#" aria-label="Twitter">Instagram</a>
             </nav>
         </div>
+        <a href="#home" class="back-to-top">Back to Top ↑</a>
     </footer>
 </body>
 </html>
